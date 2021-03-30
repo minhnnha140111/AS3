@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">        <!-- This is English language --->
+  <head>
+
+    <meta charset="utf-8">  <!-- It includes ALL the character set of English-->
+                            <!-- AA, BB, aa, bb, 1, 2, !, @, # etc. -->
+
+    <!-- For a Responsive website - you need to input the below mentioned code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- You need to copy paste few CDM codes -->
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar codes -->
+
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="Index.html"> <b><img src="C:\Users\TRONG PHUONG\Desktop\Web2\AS3\logo.png" style="height: 20" width="40"></b> </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">  <!-- will do a small styling inorder to move your nav elements to right side of the navbar -->
+    <!-- ML stands for margin left, MR - Margin right -->
+    <!-- The code works opposite here, if you wanna move things to right, use ML and if you wanna move things to left, use MR -->
+
+    <li class="nav-item">
+      <a class="nav-link" href="Index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="About.html">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Port.html">Portfolio</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="Contact.html">Contact</a>
+    </li>
+  </ul>
+
+  <!-- I need a Search input form -->
+<form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button style="background-color:#000000!important;" class="btn btn-success"type="submit" >Search</button>
+    <a href="#" target="_blank"></a>  
+</form>
+</nav>
+
+<!-- NAVBAR code ends here.............. ........ -->
+<!-- New section , About US -->
+<div class= "" style="background-color: black"> 
+  <section>
+ <!-- About Section -->
+ 
+     <div class="w3-padding-32 w3-content" id="about">
+    <h2 class="w3-text-white">About</h2>
+    <hr class="w3-opacity">
+    
+<!-- As per my design, I have divided the screen into 2 halfs-->
+<!-- I want image in 6 columns left side of the screen -->
+<!-- I want TEXT in 6 columns RIGHT side of the screen -->
+
+<div class="container">
+  <div class="row">
+
+    <!-- Image content in left side -->
+    <div class="col">
+      
+      <img src="C:\Users\TRONG PHUONG\Desktop\Web2\AS3\ava.png" width="400" height="400">
+    </div>
+        
+        <!-- Body content in right side-->
+        <div class="col">
+          <br>
+      <h2 style="color:white">Hi guys!!!</h2>
+      
+      <p style="color: white"> Hi, my name is Minh. I’m 21 years old, studying Graphic Design in FPT University.Current third-year student studying Graphic design. Passionate about Brand Identity and strongly interested in working as a graphic designer.<span id="dots">...</span><span id="more"> I'm hard working and always open to any coaching. Finding myself as a fast learner, always crave for new knowledge. I’m looking for a job as a Graphic Designer at your company</p>
+<!-- "Read more" & "Read less" buttons -->
+<button onclick="myFunction()" id="myBtn" type="button" class="btn btn-primary" style="background-color:gray">Read more</button>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<!-- Ends -->
+
+    </div>
+  </div>
+</div>
+<br>
+<h3 class="w3-padding-16" style="color: white">My Skills</h3>
+      <p class="w3-wide"style="color: white">ADOBE Illustrator</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+      </div>
+      <br>
+      <p class="w3-wide"style="color: white">ADOBE Photoshop</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:50%">50%</div>
+      </div>
+      <p class="w3-wide"style="color: white">ADOBE Indesign</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:70%">70%</div>
+      </div>
+      <br>  
+      <p class="w3-wide"style="color: white">ADOBE XD</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:60%">60%</div>
+      </div><br>
+</section>

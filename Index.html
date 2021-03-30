@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">        <!-- This is English language --->
+  <head>
+
+    <meta charset="utf-8">  <!-- It includes ALL the character set of English-->
+                            <!-- AA, BB, aa, bb, 1, 2, !, @, # etc. -->
+
+    <!-- For a Responsive website - you need to input the below mentioned code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- You need to copy paste few CDM codes -->
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+		<!-- Navbar codes -->
+
+	<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="Index.html"> <b><img src="C:\Users\TRONG PHUONG\Desktop\Web2\AS3\logo.png" style="height: 20" width="40"></b> </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">  <!-- will do a small styling inorder to move your nav elements to right side of the navbar -->
+  	<!-- ML stands for margin left, MR - Margin right -->
+  	<!-- The code works opposite here, if you wanna move things to right, use ML and if you wanna move things to left, use MR -->
+
+   <li class="nav-item">
+      <a class="nav-link" href="Index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="About.html">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Port.html">Portfolio</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="Contact.html">Contact</a>
+    </li>
+  </ul>
+
+  <!-- I need a Search input form -->
+<form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button style="background-color:#000000!important;" class="btn btn-success"type="submit" >Search</button>
+    <a href="#" target="_blank"></a>  
+</form>
+</nav>
+
+<!-- NAVBAR code ends here.............. ........ -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Raleway, sans-serif;
+}
+
+.w3-pale-red{
+  background-color: 
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("LP.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">MY Portfolio</h1>
+    <p>Nhat Minh</p>
+    <button style="background-color:black!important;" class="button"type="submit" >Hire me</button> 
+  </div>
+</div>
+<!-- New section , About US -->
+<div class= "" style="background-color: black"> 
+  <section>
+ <!-- About Section -->
+ 
+     <div class="w3-padding-32 w3-content" id="about">
+    <h2 class="w3-text-white">About</h2>
+    <hr class="w3-opacity">
+    
+<!-- As per my design, I have divided the screen into 2 halfs-->
+<!-- I want image in 6 columns left side of the screen -->
+<!-- I want TEXT in 6 columns RIGHT side of the screen -->
+
+<div class="container">
+  <div class="row">
+
+    <!-- Image content in left side -->
+    <div class="col">
+      
+      <img src="C:\Users\TRONG PHUONG\Desktop\Web2\AS3\ava.png" width="400" height="400">
+    </div>
+        
+        <!-- Body content in right side-->
+        <div class="col">
+          <br>
+      <h2 style="color:white">Hi guys!!!</h2>
+      
+      <p style="color: white"> Hi, my name is Minh. I’m 21 years old, studying Graphic Design in FPT University.Current third-year student studying Graphic design. Passionate about Brand Identity and strongly interested in working as a graphic designer.<span id="dots">...</span><span id="more"> I'm hard working and always open to any coaching. Finding myself as a fast learner, always crave for new knowledge. I’m looking for a job as a Graphic Designer at your company</p>
+<!-- "Read more" & "Read less" buttons -->
+<button onclick="myFunction()" id="myBtn" type="button" class="btn btn-primary" style="background-color:gray">Read more</button>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<!-- Ends -->
+
+    </div>
+  </div>
+</div>
+<br>
+<h3 class="w3-padding-16" style="color: white">My Skills</h3>
+      <p class="w3-wide"style="color: white">ADOBE Illustrator</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+      </div>
+      <br>
+      <p class="w3-wide"style="color: white">ADOBE Photoshop</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:50%">50%</div>
+      </div>
+      <p class="w3-wide"style="color: white">ADOBE Indesign</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:70%">70%</div>
+      </div>
+      <br>  
+      <p class="w3-wide"style="color: white">ADOBE XD</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:60%">60%</div>
+      </div><br>
+</section>
+
+<!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Portfolio</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="C:\Users\TRONG PHUONG\Desktop\Web2\AS3\saniwa.png" style="width:100% ">
+        <img src="C:\Users\TRONG PHUONG\Desktop\Web2\AS3\Coffee.png" style="width:100%">
+        <img src="C:\Users\TRONG PHUONG\Desktop\Web2\AS3\ha audio.png" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="C:\Users\TRONG PHUONG\Desktop\Web2\AS3\handbag.png" style="width:100%">
+        <img src="C:\Users\TRONG PHUONG\Desktop\Web2\AS3\usb.png" style="width:100%">
+        <img src="C:\Users\TRONG PHUONG\Desktop\Web2\AS3\1.png" style="width:100%">
+        
+      </div>
+    <!-- End photo grid -->
+    </div>
+    <!-- End Portfolio Section -->
+  </div>
+  
+</section>
+    <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Hanoi, Vietnam</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 0962386634</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: minhnnha140111@fpt.edu.vn</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/7thang12/"></a>
+    <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/_nhatmnih____/"></a>
+    <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/nguyen-nhat-minh-394902203/"></a>
+ <!-- End footer -->
+  </footer>
